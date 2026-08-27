@@ -74,7 +74,10 @@ Después de investigar, esto tiene una explicación técnica: la fibra de Jazzte
 
 **Vista general de los puertos del Cloud Gateway Ultra:**
 
-<img width="720" height="507" alt="Resumen de puertos del router" src="https://github.com/user-attachments/assets/74cfb756-a1fb-41d6-939d-cd83d4ec192c" />
+<img width="349" height="580" alt="imagen" src="https://github.com/user-attachments/assets/cb39976e-2f2a-437b-b8b0-382d06164c61" />
+
+<img width="348" height="579" alt="imagen" src="https://github.com/user-attachments/assets/95022ad6-b253-4377-b1d0-7f4121203c6d" />
+
 
 | Puerto | Destino | Modo |
 |---|---|---|
@@ -193,7 +196,12 @@ Dashboard central para acceder a todos los servicios del homelab.
 ### SafeLine (WAF)
 Web Application Firewall para proteger los dominios publicados. Es la **primera parada** de todo el tráfico web que entra desde Internet, antes de llegar a ningún servicio.
 
-![Estadísticas de SafeLine WAF](images/11-safeline-waf.png)
+<img width="1911" height="974" alt="imagen" src="https://github.com/user-attachments/assets/c6751da2-3543-47a4-83f7-7af619f0cf43" />
+
+<img width="1904" height="901" alt="imagen" src="https://github.com/user-attachments/assets/fcd8fb31-5cca-4c5b-ab45-ec8afc411011" />
+
+<img width="1895" height="501" alt="imagen" src="https://github.com/user-attachments/assets/0ed74fd9-79f8-4ddd-86db-04339928e1ea" />
+
 
 **Dominios expuestos actualmente a través de SafeLine:**
 
@@ -211,11 +219,17 @@ Proxy inverso interno. Flujo completo del tráfico entrante:
 ### Vaultwarden
 Gestor de contraseñas autoalojado (compatible con Bitwarden).
 
+<img width="1914" height="728" alt="imagen" src="https://github.com/user-attachments/assets/d375fd2f-ee7e-4497-9f1d-fa55c57d7455" />
+
 ### Uptime Kuma
-Monitorización de servicios, integrado con **ntfy** para recibir alertas en el móvil.
+Monitorización de servicios, integrado con **ntfy** para recibir alertas en el móvil. Muchas caídas, por bloqueos de mi amigo Tebas.
+
+<img width="1891" height="905" alt="imagen" src="https://github.com/user-attachments/assets/c542821b-0803-4e71-aac5-d23f151a04c0" />
 
 ### HestiaCP
 Uno de los servicios más importantes del homelab: aloja el **servidor de correo electrónico** y páginas web de algún cliente.
+
+<img width="1919" height="916" alt="imagen" src="https://github.com/user-attachments/assets/60516bbc-70f7-43b5-96b7-f679da7a7fb3" />
 
 ### Immich
 Alternativa autoalojada a Google Fotos. Implementado recientemente aprovechando el espacio libre del RAID de TrueNAS.
@@ -271,11 +285,12 @@ Después, para que todo resuelva correctamente, se consulta la sección **DNS Re
 
 **Edge Certificates** — certificado universal activo para el dominio y subdominios:
 
-![Edge Certificates en Cloudflare](images/13-cloudflare-edge-certificates.png)
+<img width="533" height="330" alt="imagen" src="https://github.com/user-attachments/assets/dbd62e5a-abd2-4f42-8f9e-fcfee8abdb58" />
 
 **Ajustes generales de SSL/TLS:**
 
-![Ajustes SSL/TLS en Cloudflare](images/14-cloudflare-ssl-tls.png)
+<img width="610" height="795" alt="imagen" src="https://github.com/user-attachments/assets/d12e087c-cc19-4208-9c1d-a22d92df405c" />
+
 
 - Always Use HTTPS: activado
 - HSTS: activado (Max-Age 3 meses)
@@ -284,8 +299,10 @@ Después, para que todo resuelva correctamente, se consulta la sección **DNS Re
 
 **TLS 1.3 y HTTPS Rewrites:**
 
-![TLS 1.3 y Automatic HTTPS Rewrites](images/15-cloudflare-tls13.png)
+<img width="612" height="796" alt="imagen" src="https://github.com/user-attachments/assets/f36dc7b9-07b3-4ebd-b2ed-5c3800a00457" />
 
 - TLS 1.3: activado
 - Automatic HTTPS Rewrites: activado
 - Certificate Transparency Monitoring: desactivado
+
+
