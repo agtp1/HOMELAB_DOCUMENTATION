@@ -1,4 +1,4 @@
-# 🏠 Mi Homelab
+<img width="863" height="188" alt="imagen" src="https://github.com/user-attachments/assets/1b5ff27f-1583-4a06-bba3-4a0a40fe5bd8" /># 🏠 Mi Homelab
 
 Documentación de mi laboratorio doméstico: red, virtualización, servicios auto-alojados y configuración de dominios/correo.
 
@@ -63,7 +63,8 @@ Después de investigar, esto tiene una explicación técnica: la fibra de Jazzte
 
 **Vista general de los puertos del Cloud Gateway Ultra:**
 
-![Resumen de puertos del router](images/02-router-ports-overview.png)
+![Resumen de puertos del router](<img width="863" height="188" alt="imagen" src="https://github.com/user-attachments/assets/4d2ab37b-a59f-4295-87d9-b54ce2d6abd8" />
+)
 
 | Puerto | Destino | Modo |
 |---|---|---|
