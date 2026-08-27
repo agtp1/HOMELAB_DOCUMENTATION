@@ -77,27 +77,28 @@ Después de investigar, esto tiene una explicación técnica: la fibra de Jazzte
 
 <img width="348" height="841" alt="imagen" src="https://github.com/user-attachments/assets/15e3a32d-9e82-4eab-9c2a-5dea41b32c9a" />
 
-![Puerto 1 AP en modo trunk](<img width="348" height="841" alt="imagen" src="https://github.com/user-attachments/assets/ef946511-52d7-4219-95f7-b2a259eaf2db" />)
 
 **Puerto 2 — Proxmox PVE1:**
 
-![Puerto 2 Proxmox PVE1](images/03-router-port2-pve1.png)
+<img width="327" height="852" alt="imagen" src="https://github.com/user-attachments/assets/74cfb756-a1fb-41d6-939d-cd83d4ec192c" />
+
 
 **Puerto 3 — TrueNAS:**
 
-![Puerto 3 TrueNAS](images/04-router-port3-nas.png)
+<img width="339" height="850" alt="imagen" src="https://github.com/user-attachments/assets/c0f147c6-ec88-4f28-b0fd-ef1ea0377f4b" />
+
 
 **Puerto 4 — Switch de clientes:**
 
-![Puerto 4 switch de clientes](images/05-router-port4-switch-clientes.png)
+<img width="336" height="855" alt="imagen" src="https://github.com/user-attachments/assets/6f3f6b54-b988-4ca1-b904-2d837be1e3c4" />
 
 **Puerto 5 (WAN) — Internet, VLAN 20 manual:**
 
-![WAN VLAN 20](images/06-router-wan-vlan20.png)
+<img width="337" height="817" alt="imagen" src="https://github.com/user-attachments/assets/b3aced2f-79f4-4a63-b3e5-c24837c629d8" />
 
 **Configuración IPv4/DNS del WAN:**
 
-![Configuración DNS del WAN](images/07-router-wan-dns.png)
+<img width="354" height="869" alt="imagen" src="https://github.com/user-attachments/assets/42bfe223-c750-4f0d-b1db-5f93e75a7083" />
 
 ### Switch de clientes
 
@@ -113,6 +114,8 @@ Actualmente hay **3 SSID**:
 
 ![Redes WiFi configuradas](images/08-wifi-redes.png)
 
+<img width="1131" height="186" alt="imagen" src="https://github.com/user-attachments/assets/a8d2b28a-59b5-4e9e-b5e8-accc4b4640df" />
+
 | SSID | Uso | Bandas |
 |---|---|---|
 | Red Principal | Miembros de la casa: móviles, portátiles, tablets | Solo 5 GHz |
@@ -125,11 +128,15 @@ Actualmente hay **3 SSID**:
 
 El sistema de **detección y prevención de intrusos** está activo: en cuanto detecta una petición de riesgo hacia la red, la bloquea al instante.
 
-![Threat Management / IDS activo](images/09-ids-threat-management.png)
+<img width="1200" height="865" alt="imagen" src="https://github.com/user-attachments/assets/22c31556-c524-4828-8b3e-7a150d6d4e5c" />
+
+<img width="1885" height="870" alt="imagen" src="https://github.com/user-attachments/assets/624b5f6d-70b6-44a6-9065-03ac2da1d437" />
 
 ### DNS dinámico
 
 Configurado **DDNS con Cloudflare** para mantener actualizados los registros DNS del dominio con la IP pública, que puede cambiar.
+
+<img width="333" height="316" alt="imagen" src="https://github.com/user-attachments/assets/79a6f9e3-1e11-45bb-b868-ba4dce332ad1" />
 
 ---
 
@@ -166,10 +173,17 @@ Todos corren sobre **PVE1** salvo que se indique lo contrario.
 ### AdGuard Home
 Bloqueador de anuncios/trackers a nivel de red, con **DNS cifrado (DoT y DoH)**.
 
-![Configuración DNS de AdGuard Home](images/10-adguard-dns.png)
+<img width="725" height="243" alt="imagen" src="https://github.com/user-attachments/assets/fb29cada-c7ca-4e5f-878c-81731b2797ed" />
+
+<img width="480" height="128" alt="imagen" src="https://github.com/user-attachments/assets/66d25cbf-4de7-47da-be6a-344b45eada2f" />
+
+<img width="380" height="378" alt="imagen" src="https://github.com/user-attachments/assets/d99507af-ffc5-4176-ac30-8673d5486d45" />
 
 ### Homarr
 Dashboard central para acceder a todos los servicios del homelab.
+
+<img width="1894" height="986" alt="imagen" src="https://github.com/user-attachments/assets/958d38bc-18b9-4a3c-885c-f39c6a35fbba" />
+
 
 ### Nginx Proxy Manager (NPM)
 Proxy inverso. Flujo de tráfico entrante:
