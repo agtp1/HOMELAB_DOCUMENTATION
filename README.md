@@ -63,8 +63,7 @@ Después de investigar, esto tiene una explicación técnica: la fibra de Jazzte
 
 **Vista general de los puertos del Cloud Gateway Ultra:**
 
-![Resumen de puertos del router](<img width="863" height="188" alt="imagen" src="https://github.com/user-attachments/assets/4d2ab37b-a59f-4295-87d9-b54ce2d6abd8" />
-)
+![Resumen de puertos del router]()
 
 | Puerto | Destino | Modo |
 |---|---|---|
@@ -75,6 +74,8 @@ Después de investigar, esto tiene una explicación técnica: la fibra de Jazzte
 | Puerto 5 (2.5 GbE) | WAN / Internet | VLAN 20 manual (ver apartado ISP) |
 
 **Puerto 1 — AP (modo Trunk):**
+
+<img width="348" height="841" alt="imagen" src="https://github.com/user-attachments/assets/15e3a32d-9e82-4eab-9c2a-5dea41b32c9a" />
 
 ![Puerto 1 AP en modo trunk](<img width="348" height="841" alt="imagen" src="https://github.com/user-attachments/assets/ef946511-52d7-4219-95f7-b2a259eaf2db" />)
 
