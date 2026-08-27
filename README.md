@@ -76,7 +76,7 @@ Después de investigar, esto tiene una explicación técnica: la fibra de Jazzte
 
 **Puerto 1 — AP (modo Trunk):**
 
-![Puerto 1 AP en modo trunk](images/01-router-port1-ap-trunk.png)
+![Puerto 1 AP en modo trunk](<img width="348" height="841" alt="imagen" src="https://github.com/user-attachments/assets/ef946511-52d7-4219-95f7-b2a259eaf2db" />)
 
 **Puerto 2 — Proxmox PVE1:**
 
