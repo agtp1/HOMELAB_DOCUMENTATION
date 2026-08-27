@@ -1,4 +1,4 @@
-<img width="863" height="188" alt="imagen" src="https://github.com/user-attachments/assets/1b5ff27f-1583-4a06-bba3-4a0a40fe5bd8" /># 🏠 Mi Homelab
+# 🏠 Mi Homelab
 
 Documentación de mi laboratorio doméstico: red, virtualización, servicios auto-alojados y configuración de dominios/correo.
 
