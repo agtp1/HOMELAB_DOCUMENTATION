@@ -305,4 +305,12 @@ Después, para que todo resuelva correctamente, se consulta la sección **DNS Re
 - Automatic HTTPS Rewrites: activado
 - Certificate Transparency Monitoring: desactivado
 
+## 🚧 Mejoras a corto plazo
 
+- [ ] **Backup de la configuración de TrueNAS**: aunque los datos están protegidos en RAID 1, la configuración del propio sistema (usuarios, shares, datasets, tareas programadas) no tiene copia. Exportar la config periódicamente y enviarla a MEGA junto con el resto de backups.
+- [ ] **Segundo Mini PC para automatización (Hermes Agent + n8n)**: montar un nuevo nodo dedicado a agentes de IA y automatización de workflows, ubicado en `Servers_Network (10)`.
+  - Definir si el modelo de Hermes Agent corre en local (requiere más RAM/GPU) o contra una API externa (más ligero).
+  - Si se expone algún webhook/endpoint hacia fuera, pasarlo por el mismo camino que el resto de servicios: `SafeLine → NPM`, nunca expuesto directo.
+  - Guardar las credenciales de las integraciones en Vaultwarden en lugar de dejarlas en texto plano dentro de n8n.
+  - Añadir el nuevo servicio a Uptime Kuma para monitorización.
+- [ ] **Vigilar la carga de PVE1**: con un Celeron N4000 corriendo 6 LXC + 1 VM está bastante ajustado. Antes de añadir más contenedores, revisar consumo de CPU/RAM para no llegar al límite.
