@@ -222,15 +222,15 @@ Configurado **DDNS con Cloudflare** para mantener actualizados los registros DNS
 2. Tipo **Cloudflared**, nombre `Home`.
 
    <!-- Pasted image 20261017153607.png -->
-   ![Tipo de túnel: Cloudflared](images/22-cloudflare-tipo-cloudflared.png)
+  
 
    <!-- Pasted image 20261017153639.png -->
-   ![Nombre del túnel: Home](images/23-cloudflare-nombre-tunel.png)
+  
 
 3. Elegir **Debian** y **64-bit**.
 
    <!-- Pasted image 20261017153747.png -->
-   ![Seleccionar Debian 64-bit](images/24-cloudflare-debian-64bit.png)
+
 
 #### 3. Conectar el LXC al túnel
 
@@ -245,12 +245,12 @@ Configurado **DDNS con Cloudflare** para mantener actualizados los registros DNS
 2. Debe salir "Linux service for cloudflared installed successfully".
 
    <!-- Pasted image 20261017153931.png -->
-   ![Servicio cloudflared instalado](images/25-cloudflared-service-install.png)
+  
 
 3. En Cloudflare, el estado del túnel pasa a **Healthy**.
 
    <!-- Pasted image 20261017154039.png -->
-   ![Túnel en estado Healthy](images/26-cloudflare-tunel-healthy.png)
+   
 
 #### 4. Comprobar que no existe el registro A
 
@@ -262,12 +262,12 @@ Simplemente nos aseguramos antes de crear la ruta:
 #### 5. Crear la ruta
 
 <!-- Pasted image 20261017154101.png -->
-![Rutas del túnel](images/27-cloudflare-routes.png)
+
 
 1. Túnel `Home` → **Routes > Add route > Published application**.
 
    <!-- Pasted image 20261017154118.png -->
-   ![Añadir ruta: Published application](images/28-cloudflare-add-route.png)
+ 
 
 2. Rellenar:
    - **Subdomain:** vacío
@@ -275,25 +275,25 @@ Simplemente nos aseguramos antes de crear la ruta:
    - **Service URL:** la IP de SafeLine, `http://192.168.10.179`. En mi caso apunta a SafeLine porque después SafeLine le pasa el tráfico a NPM, pero podría ser directamente la IP de cualquier servicio.
 
    <!-- Pasted image 20261017154140.png -->
-   ![Formulario de la ruta (1)](images/29-cloudflare-published-app-1.png)
+
 
    <!-- Pasted image 20261017154310.png -->
-   ![Formulario de la ruta (2)](images/30-cloudflare-published-app-2.png)
+ 
 
 En este caso el dominio es `adrian-gallardo.com`, pero también podría ser un subdominio.
 
 <!-- Pasted image 20261017154405.png -->
-![Ejemplo de ruta para el dominio](images/31-cloudflare-ruta-dominio-ejemplo.png)
+
 
 > ⚠️ **Muy importante — vigilar el Service URL.** Si Cloudflare muestra el típico error *Host down*, probar a cambiar `https` por `http`. En mi caso funciona con **HTTP**, aunque en alguna captura aparezca `https`.
 
 Al guardar, Cloudflare crea automáticamente el registro **CNAME**:
 
 <!-- Pasted image 20261017154450.png -->
-![Registro CNAME creado automáticamente (1)](images/32-cloudflare-cname-creado.png)
+
 
 <!-- Pasted image 20261017154538.png -->
-![Registro CNAME creado automáticamente (2)](images/33-cloudflare-dns-records.png)
+
 
 #### 6. Comprobar
 
